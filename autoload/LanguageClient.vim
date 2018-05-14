@@ -1,4 +1,4 @@
-if get(g:,"LanguageClient_loaded", 0)
+if get(g:,"languageClient_loaded", 0)
     finish
 endif
 
@@ -808,4 +808,4 @@ function! LanguageClient#cquery_vars(...) abort
     return LanguageClient#Call('$cquery/vars', l:params, l:callback)
 endfunction
 
-let g:LanguageClient_loaded = s:Launch()
+let g:languageClient_loaded = s:Launch()
