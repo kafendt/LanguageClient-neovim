@@ -145,6 +145,7 @@ function! s:HandleMessage(job, lines, event) abort
                         for l:cmd in l:params
                             execute l:cmd
                         endfor
+                        let l:result = 0
                     else
                         let l:params = type(l:params) == type([]) ? l:params : [l:params]
                         let l:result = call(l:method, l:params)
